@@ -1,0 +1,100 @@
+.form {
+  max-width: 100%;
+  margin: 5rem auto;
+  padding: 1.5rem;
+}
+@media (min-width: 601px) {
+  .form {
+    margin: 10rem auto;
+    width: calc(100% - 10rem);
+    padding: 0;
+  }
+}
+.form .intro-form {
+  text-align: center;
+}
+.form .intro-form span {
+  text-transform: uppercase;
+  margin-block: 1rem;
+}
+.form .intro-form h2 {
+  text-transform: capitalize;
+  margin: 0.725rem;
+}
+.form .intro-form p {
+  margin-bottom: 2rem;
+}
+.form .application-form {
+  border-radius: 0.5rem;
+  background-color: #FFFFFF;
+  margin-block: 3rem;
+}
+@media (min-width: 601px) {
+  .form .application-form {
+    max-width: 700px;
+    margin: 2rem auto;
+  }
+}
+.form .application-form .form-group {
+  margin-bottom: 1rem;
+}
+.form .application-form .form-group label {
+  display: block;
+  margin-bottom: 0.125rem;
+  color: #000000;
+}
+.form .application-form .form-group input,
+.form .application-form .form-group select, .form .application-form .form-group textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 0.5px solid #1d262e;
+  border-right: 2.5px solid #1d262e;
+  border-bottom: 2.5px solid #1d262e;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+}
+.form .application-form .form-group input:focus,
+.form .application-form .form-group select:focus, .form .application-form .form-group textarea:focus {
+  outline: #eae2dd;
+}
+.form .application-form .form-group textarea {
+  height: 100px;
+}
+.form .application-form .data-name {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+}
+.form .application-form .data-name .group-child {
+  width: 50%;
+}
+.form .application-form .data-name .group-child input {
+  width: 100%;
+}
+.form .application-form .alerts-wrapper {
+  height: 1.5rem;
+  display: flex;
+  justify-content: left;
+}
+.form .application-form .alerts-wrapper .hidden {
+  display: none;
+}
+.form .application-form .alerts-wrapper .danger {
+  color: #f21d1d;
+}
+.form .application-form .alerts-wrapper .success {
+  color: #4b6d3a;
+}
+.form .application-form .submit-wrapper {
+  width: 100%;
+  text-align: center;
+  padding-inline: 2rem;
+}
+.form .application-form .submit-wrapper .button {
+  width: 100%;
+}
+@media (min-width: 601px) {
+  .form .application-form .submit-wrapper .button {
+    max-width: 400px;
+  }
+}

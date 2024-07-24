@@ -1,0 +1,56 @@
+@import '../settings/variables';
+@import '../settings/mixins';
+
+.navbar {
+    overflow: hidden;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    width: 100%;
+    background-color: $white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    padding-inline:2rem ;
+
+
+    &.scrolled {
+        background-color: $white;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar-right {
+        text-align: center;
+        padding: 1rem;
+        width: fit-content;
+
+        @include small{
+            width: 100%;
+
+        }
+        .button {
+            width: 200px;
+            padding: 0.725rem;
+            font-size: 1rem;
+
+        }
+    }
+
+    .navbar-left {
+        justify-content: center;
+        
+    }
+
+    @include small {
+        width: 100%;
+        .navbar-left {
+            margin: 0 auto;
+            padding-top: 1rem;
+            .logo img {
+                height: 6rem;
+            }
+        }
+    }
+}

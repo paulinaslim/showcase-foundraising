@@ -1,0 +1,51 @@
+@import '../settings/variables';
+
+.footer {
+    background-color: $canadian-grey-transparent;
+    padding: 2rem 0;
+    p,a {
+        color: $custom-black;
+
+    }
+    .child{
+        width: 100%;
+        @include medium{
+            width: 30%;
+        }
+    }
+    .footer-wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 1rem;
+
+        @include medium{
+            flex-direction: row;
+        }
+    }
+
+    .footer-left,
+    .footer-right {
+        flex: 1;
+        p {
+            margin: 0.5rem 0;
+        }
+    }
+
+    .footer-left {
+        text-align: left;
+        .social-icons{
+
+            display: flex;
+            gap: 0.5rem;
+        }
+    }
+
+    .footer-right {
+        display: flex;
+        flex-direction: column;
+    }
+}

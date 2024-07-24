@@ -1,0 +1,72 @@
+// ------------------- COLORS ---------------------
+$white: #FFFFFF;
+$grey-text: #e7dcdc;
+$gray: #afacac;
+$grey: #afacac;
+
+$black: #000000;
+$solid: #2C2C2C;
+$solid-transparent: #1E262F;
+$custom-black: #1d262e;
+$asparagus: #4b6d3a;
+$june-bud: #BCD749;
+$light-june-bud: #D7D349;
+$sunglow: #FEC139;
+$dark-sunglow: #FEA81A;
+$canadian-grey: #eae2dd;
+$signal-red: #f21d1d;
+
+$mesh-gradient:linear-gradient(180deg, rgba(0, 0, 0,1) 35%, rgba(140,160,54,1) 93%);
+$form-shadow: 0 0 32px 2px rgba(0,0,0,0.5);
+
+$custom-black-transparent: rgba(52, 50, 64, 0.632);
+$canadian-grey-transparent:rgba(234, 226, 221, 0.5);
+// ----------------- FONTS -------------------------
+
+$font-inter: 'Inter Tight', sans-serif;
+$font-oscine: 'Oscine', sans-serif;
+
+
+$content-width: calc(100% - 5rem);
+
+
+$thin: 100;
+$lighter:200;
+$light: 300;
+$regular: 400;
+$semibold: 600;
+$bold: 700;
+$extra-bold: 900;
+
+
+// ------------------BREAKPOINTS ----------------
+$small: 600px;
+$medium: 1200px;
+$large: 1475px;
+$xlarge: 2000px;
+
+
+// MEDIA QUERIES MIXINS 
+@mixin small {
+    @media (min-width: 0px) and (max-width: $small) {
+        @content;
+    }
+}
+
+@mixin medium {
+    @media (min-width: ($small + 1px)) {
+        @content;
+    }
+}
+
+@mixin large {
+    @media (min-width: ($medium + 1px)) {
+        @content;
+    }
+}
+
+@mixin xlarge {
+    @media (min-width: ($large + 1px))  {
+        @content;
+    }
+}

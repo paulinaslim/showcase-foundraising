@@ -1,0 +1,82 @@
+@import 'variables'; 
+// Inter Tight
+@font-face {
+    font-family: 'Inter Tight';
+    font-style: normal;
+    font-weight: $thin;
+    src: url('../../assets/fonts/inter/Inter-Tight-100.woff2') format('woff2');
+
+}
+
+@font-face {
+    font-family: 'Inter Tight';
+    font-style: normal;
+    font-weight: $lighter;
+    src: url('../../assets/fonts/inter/Inter-Tight-200.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Inter Tight';
+    font-style: normal;
+    font-weight: $regular;
+    src: url('../../assets/fonts/inter/Inter-Tight-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Inter Tight';
+    font-style: normal;
+    font-weight: $light;
+    src: url('../../assets/fonts/inter/Inter-Tight-300.woff2') format('woff2');
+}
+
+
+
+@font-face {
+    font-family: 'Inter Tight';
+    font-style: normal;
+    font-weight: $semibold;
+    src: url('../../assets/fonts/inter/Inter-Tight-600.woff2') format('woff2');
+
+}
+
+@font-face {
+    font-family: 'Inter Tight';
+    font-style: normal;
+    font-weight: $bold;
+    src: url('../../assets/fonts/inter/Inter-Tight-700.woff2') format('woff2');
+
+}
+@font-face {
+    font-family: 'Inter Tight';
+    font-style: normal;
+    font-weight:$extra-bold;
+    src: url('../../assets/fonts/oscine/Inter-Tight-900.woff2') format('woff2');
+
+}
+
+
+//  Oscine 
+@font-face {
+    font-family: 'Oscine';
+    font-style: normal;
+    font-weight:$bold;
+    src: url('../../assets/fonts/oscine/Oscine_Bd.woff2') format('woff2');
+
+}
+
+
+@font-face {
+    font-family: 'Oscine';
+    font-style: normal;
+    font-weight:$regular;
+    src: url('../../assets/fonts/oscine/Oscine_Rg.woff2') format('woff2');
+
+}
+
+@font-face {
+    font-family: 'Oscine';
+    font-style: normal;
+    font-weight:$extra-bold;
+    src: url('../../assets/fonts/oscine/Oscine_XBd.woff2') format('woff2');
+
+}

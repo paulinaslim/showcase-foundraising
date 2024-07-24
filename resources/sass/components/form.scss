@@ -1,0 +1,113 @@
+@import '../settings/variables';
+
+.form {
+    max-width: 100%;
+    margin: 5rem auto;
+    padding: 1.5rem;
+
+
+    @include medium {
+        margin: 10rem auto;
+        width: calc(100% - 10rem);
+        padding: 0;
+    }
+
+    .intro-form{
+        text-align: center;
+        span{
+            text-transform: uppercase;
+            margin-block: 1rem;
+        }
+        h2{
+            text-transform: capitalize;
+            margin: 0.725rem;
+        }
+        p{
+            margin-bottom: 2rem;
+
+        };
+    }
+
+    .application-form {
+        border-radius: 0.5rem;
+        background-color: $white;
+        margin-block: 3rem;
+
+        @include medium {
+            max-width: 700px;
+            margin: 2rem  auto;
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+
+            label {
+                display: block;
+                margin-bottom: 0.125rem;
+                color: $black;
+            }
+
+            input,
+            select, textarea {
+                width: 100%;
+                padding: 0.5rem;
+                border: 0.5px solid $custom-black;
+                border-right: 2.5px solid $custom-black;
+                border-bottom: 2.5px solid $custom-black;
+                border-radius: 0.25rem;
+                font-size: 1rem;
+                &:focus {
+                    outline: $canadian-grey;;
+                 } 
+        
+            }
+            textarea{
+                height: 100px;
+            }
+            
+        }
+        .data-name {
+            display: flex;
+            gap: 1rem;
+            width: 100%;
+            .group-child {
+                width: 50%;
+                input {
+                 width: 100%;
+                }
+
+            }
+        }
+        .alerts-wrapper {
+            height: 1.5rem;
+            display: flex;
+            justify-content: left;
+            .hidden {
+
+                display: none;
+            }
+
+            .danger{
+                color: $signal-red;
+            }
+            .success{
+                color: $asparagus;
+            }
+
+
+        }
+        .submit-wrapper {
+            width: 100%;
+            text-align: center;
+            padding-inline: 2rem;
+            .button {
+                width: 100%;    
+
+                @include medium {
+                    max-width: 400px;
+                }
+               
+            }
+        }
+    }
+}

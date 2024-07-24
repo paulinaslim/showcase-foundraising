@@ -1,0 +1,40 @@
+.cards {
+  margin: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+@media (min-width: 601px) {
+  .cards {
+    padding-block: 3rem;
+    justify-content: center;
+    gap: 2rem;
+  }
+}
+.cards .card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 5px 5px 15px -8px #1d262e;
+  cursor: pointer;
+}
+.cards .card:hover {
+  background-color: rgba(234, 226, 221, 0.5);
+  color: #1d262e;
+  transition: ease-out 0.5s;
+}
+@media (min-width: 601px) {
+  .cards .card {
+    max-width: 25%;
+  }
+}
+.cards .card .icon img {
+  width: 50px;
+  height: 50px;
+}

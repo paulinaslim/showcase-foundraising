@@ -1,0 +1,309 @@
+@import '../settings/variables';
+
+.cookieconsent {
+	// Disable Texte
+	&__disable-text {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 25px;
+		color: white;
+		border: 4px solid transparent;
+		padding: 10px 40px;
+
+		&:not(:last-child) {
+			margin-bottom: 15px;
+		}
+
+		&.show-error {
+			font-size: 18px;
+			color: $signal-red;
+			padding: 14px 40px;
+		}
+
+	}
+
+	// Bar - Element
+	&__bar {
+		position: fixed !important;
+		bottom: 0;
+		left: 0;
+		height: auto;
+		width: 100%;
+		z-index: 950;
+		background-color: $canadian-grey;
+		padding: 24px 0;
+	}
+
+	&__bar-wrapper,
+	&__bar-control {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 25px;
+	}
+
+	&__bar-details-table-wrapper {
+        color: $custom-black;
+		padding: 30px 0;
+	}
+
+	&__bar-headline {
+		font-weight: 100;
+		margin-bottom: 8px;
+		color: $custom-black;
+	}
+
+	&__bar-copy {
+		padding-bottom: 15px;
+		color: $custom-black;
+	}
+
+	&__bar-details {
+		overflow: auto;
+		max-height: 200px;
+		transition: max-height 350ms ease-out;
+
+		& table {
+			color: $white;
+			font-size: 15px;
+		}
+		tr {
+			border-bottom: 1px $grey solid;
+			color: $custom-black;
+		}
+		thead tr {
+			// border: none;
+		}
+	}
+
+	&__bar-option-wrapper {
+		padding: 20px 0px;
+	}
+
+	&__bar-option {
+		display: inline-flex;
+		align-items: center;
+
+		color: $custom-black;
+		cursor: pointer;
+		input {
+			margin-right: 10px;
+			border: 2px solid #fff;
+			transition: border-color 0.2s ease;
+			background: none;
+
+			&:hover,
+			&:focus {
+				border: 2px solid $grey !important;
+			}
+
+			&:checked {
+				background-image: svg-load('iconfont/check.svg', fill=#000) !important;
+				border: 2px solid #fff;
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: 80% !important;
+				background-color: white;
+			}
+		}
+
+		&:not(:last-child) {
+			margin-right: 15px;
+		}
+	}
+
+	&__bar-details-table {
+		overflow: hidden;
+		margin-top: 12px;
+	}
+
+	&__bar-details-table-header {
+		font-size: 18px;
+		// border-bottom: 1px solid $grey-1;
+		padding-bottom: 5px;
+		color: $custom-black;
+        table tbody tr  th {
+        color: $custom-black;
+
+
+        }
+
+		p {
+			font-size: 16px;
+        color: $custom-black;
+
+		}
+
+		h4 {
+			font-weight: 100;
+			color: $custom-black;
+		}
+	}
+
+	&__bar-control {
+		display: flex;
+		flex-direction: column-reverse;
+		margin-top: 20px;
+		justify-content: center;
+        color: $custom-black;
+
+
+		@include medium {
+			align-items: flex-end;
+		}
+
+		@include large {
+			flex-direction: row;
+			justify-content: space-between;
+		}
+	}
+
+	&__bar-nav {
+		display: flex;
+		justify-content: center;
+		color: $custom-black;
+	}
+
+	&__bar-nav-item {
+		display: flex;
+		justify-content: center;
+		align-self: center;
+		margin-top: 20px;
+
+		@include large {
+			margin-top: 25px;
+			width: 100%;
+			margin-top: 0px;
+		}
+
+		a {
+			font-size: 14px;
+		}
+
+		&:not(:last-child) {
+			margin-right: 26px;
+		}
+	}
+
+	&__bar-buttons {
+		align-self: flex-end;
+		width: 100%;
+
+		@include medium {
+			width: auto;
+		}
+	}
+
+	&__bar-buttons button {
+		width: 100%;
+
+		@include medium {
+			width: auto;
+		}
+
+		&:not(:first-child) {
+			margin-top: 10px;
+
+			@include medium {
+				margin-top: 0px;
+			}
+		}
+	}
+
+	// Overlay - Element
+	&__overlay {
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 100vh;
+		width: 100vw;
+		z-index: 999998;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		// Background
+		&::before {
+			content: '';
+			background-color: $white;
+			opacity: 0.4;
+			height: 100vh;
+			width: 100vw;
+			position: fixed;
+			top: 0;
+			left: 0;
+			z-index: 999998;
+		}
+	}
+
+	&__overlay-box {
+		padding: 20px 20px;
+		height: auto;
+		max-width: 667px;
+		max-height: 100vh;
+		overflow-y: auto;
+		z-index: 999999;
+		background-color: $canadian-grey;
+	}
+
+	&__overlay-headline {
+		margin-bottom: 15px;
+		color: $custom-black;
+	}
+
+	&__button {
+		background-color: rgba(140, 152, 125, 0.2);
+		color: $custom-black;
+		border-color: rgba(140, 152, 125, 0.2);
+		padding: 5px 12px;
+		height: auto;
+		border-radius: 4px;
+
+		&:not(:last-child) {
+			margin-right: 5px;
+		}
+
+		&--blue {
+			background-color: $grey;
+			color: $custom-black;
+		}
+	}
+
+	// Do Not Track - Element
+	&__donottrack {
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		height: auto;
+		width: 250px;
+		background-color: $canadian-grey;
+		padding: 20px;
+		transition: right 1s ease;
+		color: $white;
+		border-radius: 2px;
+
+		&.is-animated {
+			right: -310px;
+		}
+	}
+
+	&__donottrack-btn {
+		position: absolute;
+		top: 2px;
+		right: 2px;
+		border: 0px;
+		background-color: transparent;
+		outline: none;
+		cursor: pointer;
+		color: $white;
+		height: 15px;
+		width: 15px;
+	}
+
+	&__donottrack-time {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		background-color: $canadian-grey;
+		height: 6px;
+		width: 0%;
+	}
+}

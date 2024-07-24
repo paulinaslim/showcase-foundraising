@@ -1,0 +1,80 @@
+@import '../settings/variables';
+.hero {
+    padding-top: 12rem;
+    @include medium {
+        padding-top: 15rem;
+        padding-bottom: 10rem;
+    }
+
+    .text-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0 auto;
+        @include small {
+            width: 60%;
+        }
+      
+        .headline {
+            text-align: center;
+            text-transform: capitalize;
+            @include medium{
+                font-size: 3rem;
+            }
+    
+        }
+        .copy {
+            text-align: center;
+            .bold{
+                font-weight: 600;
+            }
+            .underline {
+                text-decoration: underline;
+
+            }
+            @include medium {
+                max-width: 650px;
+            }
+        }
+    }
+
+    .images-wrapper {
+        position: relative;
+        @include medium {
+            width: $content-width;
+        }
+
+        .img-right{
+            position: absolute;
+            right: 0rem;
+            top: -10rem;
+            img {
+              display: none;
+                @include medium {
+                    display: block;
+                    width: 300px;
+                    height: 300px;
+
+                }
+            }
+        }
+        .img-left {
+            
+            img {
+                display: none ;
+                position: absolute;
+                top: -18rem;
+                @include medium {
+                display: block;
+                width: 300px;
+                height: 300px;
+
+            }
+        }
+
+
+        }
+
+    }
+}
