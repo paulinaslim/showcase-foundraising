@@ -33,7 +33,7 @@
         </div>
 
         <div class="form-group">
-            <label for="email">Email:</label>
+            <label for="email">E-Mail:</label>
             <input type="email" id="email" name="email" required>
         </div>
 
@@ -58,4 +58,5 @@
         </div>
     </form>
     <hr>
+
 </section>
