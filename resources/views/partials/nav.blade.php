@@ -1,5 +1,8 @@
 <nav class="navbar">
     <div class="navbar-left">
+        <a href="/" class="mobile">
+            <img src="{{ asset('images/mobile-logo.png') }}" alt="Logo Mobile">
+        </a>
         <a href="/" class="logo">
             <img src="{{ asset('images/logo.png') }}" alt="Logo">
         </a>
