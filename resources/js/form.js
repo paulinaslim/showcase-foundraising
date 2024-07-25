@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const formData = new FormData(form);
         const jsonData = {};
         formData.forEach((value, key) => (jsonData[key] = value));
-        console.log("form start");
+        console.log("Form data:", jsonData);
 
         fetch(form.action, {
             method: "POST",
@@ -24,10 +24,13 @@ document.addEventListener("DOMContentLoaded", function () {
             },
             body: JSON.stringify(jsonData),
         })
-            .then((response) => response.json())
+            .then((response) => {
+                return response.json();
+            })
             .then((data) => {
+                console.log("Response data:", data);
                 if (data.errors) {
-                    console.log("Validation errors occurred", data.errors);
+                    console.log("Validation errors occurred:", data.errors);
                     dangerAlert.style.display = "block";
                 } else {
                     console.log("Form submitted successfully!");

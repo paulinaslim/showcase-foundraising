@@ -1,6 +1,7 @@
 import "./accordion";
 import "./navbar";
 import "./form";
+import "./downloadPdf";
 import "./cookieConsent";
 
 import JsCookieConsent from "./cookieConsent";

@@ -16,13 +16,13 @@
     <div class="image-text">
 
         <div class="image">
-            <img src="{{ asset('images/about.png') }}" alt="girl painting">
+            <img src="{{ asset('images/hero-right.png') }}" alt="girl painting">
         </div>
 
         <div class="text accordion-container">
             <div class="ac ac-active">
                 <button class="ac-header">
-                    <button type="button" class="ac-trigger">Our Mission.</button>
+                    <button type="button" class="ac-trigger">01. Our Mission.</button>
                 </button>
                 <div class="ac-panel">
                     <p class="ac-text">est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing
@@ -33,7 +33,7 @@
             </div>
             <div class="ac">
                 <h2 class="ac-header">
-                    <button type="button" class="ac-trigger">Our Goal.</button>
+                    <button type="button" class="ac-trigger">02. Our Goal.</button>
                 </h2>
                 <div class="ac-panel">
                     <p class="ac-text">Lorem pscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
@@ -43,7 +43,7 @@
             </div>
             <div class="ac">
                 <h2 class="ac-header">
-                    <button type="button" class="ac-trigger">Our Vision.</button>
+                    <button type="button" class="ac-trigger">03. Our Vision.</button>
                 </h2>
                 <div class="ac-panel">
                     <p class="ac-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, consectetur adipiscing
@@ -76,7 +76,7 @@
         <div class="text accordion-container">
             <div class="ac ac-active">
                 <button class="ac-header">
-                    <button type="button" class="ac-trigger">01. Donate:</button>
+                    <button type="button" class="ac-trigger">01. Donate</button>
                 </button>
                 <div class="ac-panel">
                     <p class="ac-text">
@@ -87,7 +87,7 @@
             </div>
             <div class="ac">
                 <h2 class="ac-header">
-                    <button type="button" class="ac-trigger">02. Volunteer:</button>
+                    <button type="button" class="ac-trigger">02. Volunteer</button>
 
                 </h2>
                 <div class="ac-panel">
@@ -97,7 +97,7 @@
             </div>
             <div class="ac">
                 <h2 class="ac-header">
-                    <button type="button" class="ac-trigger">03. Partner with Us:</button>
+                    <button type="button" class="ac-trigger">03. Partner with Us</button>
                 </h2>
                 <div class="ac-panel">
                     <p class="ac-text">Businesses and individuals can collaborate with us through sponsorships, art
@@ -107,7 +107,7 @@
 
             <div class="ac">
                 <h2 class="ac-header">
-                    <button type="button" class="ac-trigger">04. Attend Events:</button>
+                    <button type="button" class="ac-trigger">04. Attend Events</button>
                 </h2>
                 <div class="ac-panel">
                     <p class="ac-text">Participate in our fundraising events, art workshops, and exhibitions to show

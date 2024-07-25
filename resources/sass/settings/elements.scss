@@ -1,6 +1,8 @@
 @import 'variables'; 
 *{
     box-sizing: border-box;
+    font-family: 'Inter Tight';
+
 }
 html{
     background-color: #FFFFFF;
@@ -36,6 +38,7 @@ button{
     cursor: pointer;
     border: none;
     background-color: transparent;
+
 }
 
 // input, select,textarea{

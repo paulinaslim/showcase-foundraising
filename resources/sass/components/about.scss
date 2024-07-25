@@ -45,6 +45,7 @@
             gap: 2rem;
             display: flex;
             flex-direction: column;
+            justify-content: space-around;
             @include large {
                 flex-direction: row;
             }
@@ -88,10 +89,7 @@
                     transition: transform 0.3s ease;
                     transform: translate(0, -50%) rotate(0);     
                 }
-                .ac.ac--active .ac-header::after {
-                    // transform: translate(0, -50%) rotate(90deg);     
-                }
-                
+                 
             }
             .ac-text{
                 padding: 0.5rem;

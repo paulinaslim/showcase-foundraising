@@ -15,32 +15,44 @@
     }
     
     .card {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        gap: 0.5rem;
+
         padding: 1rem;
         border: 1px solid $black;
         border-radius:5px;
         text-align: center;
-        -webkit-box-shadow: 5px 5px 15px -8px $custom-black; 
-        box-shadow: 5px 5px 15px -8px $custom-black;
+        -webkit-box-shadow: 5px 5px 15px -8px $canadian-grey;
+        box-shadow: 5px 5px 15px -8px $grey;
         cursor: pointer;
-    
-                
+
+        @include medium {
+            max-width: 25%;
+        }
         &:hover {
             background-color: $canadian-grey-transparent;
             color: $custom-black;
             transition: ease-out 0.5s;
-    
         }
-    
-           @include medium {
-            max-width: 25%;
-         }
+        a {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 0.5rem;
+            h4{
+                text-transform: uppercase;
+                color: $custom-black-transparent;
+                font-weight: bold;
+                letter-spacing: 1px
+            }
+        }
         .icon img{
             width: 50px;
             height: 50px;
+        }
+        .cta {
+            text-transform: uppercase;
+            text-decoration: underline;
+            color: $custom-black-transparent;
+            font-weight: bold;
         }
         
     }

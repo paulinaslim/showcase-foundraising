@@ -6,7 +6,7 @@
                 <a href="https://www.facebook.com" class="social-icon">
                     <img src="{{ asset('images/icons/facebook.svg') }}" alt="Facebook">
                 </a>
-                <a href="https://www.twitter.com" class="social-icon">
+                <a href="https://www.linkedin.com" class="social-icon">
                     <img src="{{ asset('images/icons/linkedin.svg') }}" alt="Linkedin">
                 </a>
                 <a href="https://www.instagram.com" class="social-icon">

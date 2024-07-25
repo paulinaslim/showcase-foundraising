@@ -1,10 +1,10 @@
 @import '../settings/variables';
 .hero {
-    padding-top: 12rem;
-    @include medium {
-        padding-top: 15rem;
-        padding-bottom: 10rem;
-    }
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     .text-wrapper {
         display: flex;
@@ -12,20 +12,33 @@
         justify-content: center;
         flex-direction: column;
         margin: 0 auto;
-        @include small {
-            width: 60%;
+        padding: 1rem;
+        @include medium {
+            padding: 0;
+            width: 80%;
         }
-      
-        .headline {
-            text-align: center;
-            text-transform: capitalize;
-            @include medium{
-                font-size: 3rem;
-            }
     
+        .headline {
+        position: relative;
+        text-align: center;
+        text-transform: capitalize;
+        font-size: 1.75rem;
+        br{
+            display: none;
+        }
+            @include medium{
+                font-size: 2.5rem;
+                br{
+                    display: inline-block;
+                }
+            }
+            @include large{
+                font-size: 3.25rem;
+            }
         }
         .copy {
             text-align: center;
+            font-size: 1.25rem;
             .bold{
                 font-weight: 600;
             }
@@ -36,45 +49,146 @@
             @include medium {
                 max-width: 650px;
             }
-        }
-    }
-
-    .images-wrapper {
-        position: relative;
-        @include medium {
-            width: $content-width;
+            @include large{
+               font-size: 1.5rem;
+            }
         }
 
-        .img-right{
-            position: absolute;
-            right: 0rem;
-            top: -10rem;
-            img {
-              display: none;
+        .btn-wrapper {
+            margin: 1.25rem;
+            padding-inline: 0.125rem;
+            display: flex;
+            justify-content: center;
+      
+            
+            .download-pdf {
+                padding: 0.5rem;
+                width: 150px;
+                text-transform: uppercase;
+                font-weight: 600;
+                font-size: .725rem;
                 @include medium {
-                    display: block;
-                    width: 300px;
-                    height: 300px;
-
+                    padding: 0.725rem;
+                }
+                .icon {
+                    padding-inline: 0.5rem;
+                    animation: moveArrow 3s infinite;
                 }
             }
         }
-        .img-left {
-            
-            img {
-                display: none ;
-                position: absolute;
-                top: -18rem;
-                @include medium {
-                display: block;
-                width: 300px;
-                height: 300px;
+    }
+    .image-wrapper {
+        display: flex;
+        justify-content: space-around;
+        padding: 2rem;
+    }
 
-            }
-        }
-
-
+    .img {
+        width: 200px; 
+        height:200px; 
+        overflow: hidden;
+        position: relative;
+        display: none;
+        @include medium {
+            display: flex;
         }
 
     }
+    .image-mobile {
+        display: block;
+        width: 250px; 
+        height:250px; 
+        padding: 0;
+        img {
+            width: 220px;
+            animation: swing1 5s infinite alternate;
+
+        }
+        @include medium {
+            display: none;
+        }
+    }
+
+
+    .img img {
+        padding: 1rem;
+        width: 100%;
+        height: auto;
+        position: absolute;
+        animation: swing1 s infinite alternate;
+    }
+    
+    .img:nth-child(2) img {
+        display: none;
+        @include medium {
+            display: block;
+            animation: swing1 6s infinite alternate;
+        }
+    }
+
+    .img:nth-child(3) img {
+        display: none;
+        @include medium {
+            display: block;
+            animation: swing3 3s infinite alternate;
+        }
+
+    }
+
+    .img:nth-child(4) img {
+        display: none;
+        @include medium {
+            display: block;
+            animation: swing4 2s infinite alternate;
+        }
+    }
+    .img:nth-child(5) img {
+        display: none;
+        @include medium {
+            display: block;
+            animation: swing2 10s infinite alternate;
+        }
+    }
+
+    @keyframes swing1 {
+        20% { transform: rotate(3deg); } 
+        40% { transform: rotate(-5deg); } 
+        60% { transform: rotate(2deg); } 
+        80% { transform: rotate(-5deg); } 
+        100% { transform: rotate(0deg); } 
+    }
+    @keyframes swing2 {
+        20% { transform: rotate(6deg); } 
+        40% { transform: rotate(-10deg); } 
+        100% { transform: rotate(5deg); } 
+    }
+
+    @keyframes swing3 {
+        20% { transform: rotate(1deg); } 
+        40% { transform: rotate(-2deg); } 
+        60% { transform: rotate(2deg); } 
+        80% { transform: rotate(-2deg); } 
+        100% { transform: rotate(0deg); } 
+    }
+
+    @keyframes swing4 {
+        20% { transform: rotate(1deg); } 
+        30% { transform: rotate(-3deg); } 
+        40% { transform: rotate(2deg); } 
+        50% { transform: rotate(-2deg); } 
+        60% { transform: rotate(2deg); } 
+        80% { transform: rotate(-2deg); } 
+        100% { transform: rotate(0deg); } 
+    }
+
+    @keyframes moveArrow {
+        0%, 100% {
+            transform: translateX(0);
+        }
+        50% {
+            transform: translateX(8px);
+    }
 }
+}
+
+
