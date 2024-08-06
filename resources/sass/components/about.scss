@@ -1,22 +1,45 @@
 @import '../settings/variables';
 
 .about-wrapper {
-    width: 100%;
-    padding: 1.5rem;
-    @include medium {
-        margin: 5rem auto;
-        width: calc(100% - 10rem);
-        padding: 0;
+    .image-mobile{
+        display: inline-block;
+        background: linear-gradient(0deg, $white 0%,  $canadian-grey 100%);
+            img {
+                max-width: 100%; 
+            }
+
+        @include medium {
+            display: none;
+        }
+    }
+    .panel{
+        width: 100%;
+        padding: 1.5rem;
+        
+        @include medium {
+            margin: 0 auto;
+        }
+
+    }
+    .panel-1{
+
+            background: linear-gradient(0deg, $canadian-grey 0%,  $white 100%);
+    }
+    .panel-2 {
+        background: linear-gradient(0deg, $canadian-grey 0%,  $white 100%);
+        @include medium {
+            background: linear-gradient(0deg, $white 0%,  $canadian-grey 100%);
+        }
     }
 
     .intro {
         width: 100%;
-        margin-block: 2rem;
+        margin-top: 2rem;
 
 
         @include large {
             display: flex;
-            margin-block: 8rem;
+            // margin-block: 8rem;
             gap: 1.5rem;
         }
 
@@ -49,6 +72,12 @@
             @include large {
                 flex-direction: row;
             }
+        .image-desktop{
+            display: none;
+            @include medium {
+                display: inline-block;
+            }
+        }
 
         .image img{
             max-width: 100%; 
@@ -60,6 +89,7 @@
 
     .accordion-container, .accordion{
         .ac {
+            background-color: transparent;
             border: none;
             .ac-trigger {
                 font-family: 'Inter Tight';

@@ -1,13 +1,19 @@
 @import '../settings/variables';
+.form-wrapper {
+    background: linear-gradient(0deg, $canadian-grey 0%,  $white 100%);
+    @include medium {
+        padding-top: 10em;
+    }
+}
 
 .form {
     max-width: 100%;
-    margin: 5rem auto;
+    margin: 5rems auto;
     padding: 1.5rem;
 
 
     @include medium {
-        margin: 10rem auto;
+        margin: 0 auto;
         width: calc(100% - 10rem);
         padding: 0;
     }
@@ -30,7 +36,7 @@
 
     .application-form {
         border-radius: 0.5rem;
-        background-color: $white;
+        background-color: transparent;
         margin-block: 3rem;
 
         @include medium {

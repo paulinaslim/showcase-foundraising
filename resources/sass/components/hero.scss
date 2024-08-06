@@ -2,9 +2,17 @@
 .hero {
     height: 100vh;
     display: flex;
+    margin-top: 7rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: linear-gradient(0deg, $white 0%,  $canadian-grey-transparent 100%);
+
+
+    @include medium {
+        height: 100vh;
+    }
+
 
     .text-wrapper {
         display: flex;
@@ -67,6 +75,7 @@
                 text-transform: uppercase;
                 font-weight: 600;
                 font-size: .725rem;
+                color: $black;
                 @include medium {
                     padding: 0.725rem;
                 }

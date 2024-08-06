@@ -1,0 +1,259 @@
+@import '../settings/variables';
+.gsap {
+  background-color: $black;
+    width: 100%;
+    margin-block: 10rem;
+    padding-top: 6rem;
+    @include medium {
+        padding-inline: 2rem;
+    }
+    .separator {
+        height: 500px;
+       
+    }
+
+    .a , .f{
+        background-color: $canadian-grey;
+       }
+       .b, .d  {
+        background-color: $grey;
+       }
+       .e , .c{
+        background-color: $custom-black-transparent;
+  
+       }
+      .box {
+          width: 150px;
+          height: 150px;
+          border: 2px solid $canadian-grey-transparent;
+          border-radius: 25px;
+        
+      }
+
+      .wrapper {
+        margin-block: 2rem;
+        display: flex;
+    }
+
+    .boxes-wrapper {
+        flex-direction: column;
+        gap: 5rem;
+         
+    }
+    .ghost-wrapper {
+        margin-block: 2rem;
+        position: relative;
+        .box {
+            position: absolute;
+        }
+    }
+
+
+    // BUBBLES
+    .bubbles {
+      background-color: black;
+      width: 100%;
+
+      min-height: 350px;
+      height: 500px;
+      padding-block: 2rem;
+      overflow: hidden;
+      flex-direction: row;
+      .bubble-wrapper{
+        position: relative;
+        width: 100%;
+        height: 350px;
+        margin: 5rem auto;
+        @include medium {
+            width: 60%;
+        }
+        @include large {
+          width: 70%;
+
+        }
+
+      }
+  
+        .paragraph {
+          background-color: #ff4484;
+          width: fit-content;
+          height: fit-content;
+          position: absolute;
+          top: -5rem;
+          left: 50%;
+          color: white;
+          text-transform: uppercase;
+          text-align: center;
+          z-index: 20;
+  
+        }
+    }
+    .bubble {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        box-shadow: inset 0 0 25px rgba(255, 255, 255, 0.25);
+        animation: move_bubble 8s ease-in-out infinite;
+        
+      }
+      
+      .bubble:nth-child(2) {
+        zoom: 0.6;
+        bottom:0rem;
+        right:5rem ;
+        animation-delay: -3s;
+        @include medium {
+          top:3.5rem;
+          
+        }
+      }
+      
+      .bubble:nth-child(3) {
+        zoom: 0.45;
+        bottom: 1rem;
+        left: 1rem;
+        animation-delay: -5s;
+        @include medium {
+          top: 5rem;
+          right: 100px;
+        }
+
+      }
+      
+      .bubble:nth-child(4) {
+        zoom: 0.55;
+
+        left: 12rem;
+        bottom: 1rem;
+        animation-delay: -1s;
+        @include medium {
+        zoom: 0.65;
+
+          left: 55%;
+          top: 2.25rem;
+        }
+
+      }
+      
+      .bubble:nth-child(5) {
+        zoom: 0.55;
+        top: 2rem;
+        left: 10%;
+        animation-delay:-8s;
+
+
+      }
+      .bubble:nth-child(6) {
+        zoom: 0.35;
+        right: 5%;
+        top: 4.25rem;
+        display: none;
+        animation-delay:-2s;
+        @include medium {
+          display: block;
+        }
+      }
+      .bubble:nth-child(7) {
+        zoom: 0.45;
+        top: 2rem;
+        left: 39%;
+        animation-delay:-5s;
+
+      }
+      .bubble:nth-child(8) {
+        zoom: 0.55;
+        top: 2rem;
+        left: 32%;
+      
+       
+      }
+      .bubble:nth-child(9) {
+        zoom: 0.55;
+        bottom: 30%;
+        left: 56%;
+        animation-delay: -5s;
+
+   
+      }
+      .bubble:nth-child(10) {
+        zoom: 0.7;
+        top: 3rem;
+        left: 46%;    
+      }
+      @keyframes move_bubble {
+        0%,100% {
+          transform: translateY(-20px);
+        }
+      
+        50% {
+          transform: translateY(20px);
+        }
+      }
+
+
+            
+      .bubble::before {
+        content: '';
+        position: absolute;
+        top: 50px;
+        left: 45px;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: #fff;
+        z-index: 1;
+        filter: blur(5px);
+      }
+      
+      .bubble::after {
+        content: '';
+        position: absolute;
+        top: 80px;
+        left: 80px;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #fff;
+        z-index: 1;
+        filter: blur(5px);
+
+      }
+      
+      .bubble span {
+        position: absolute;
+        border-radius: 50%;
+      }
+      
+      .bubble span:nth-child(1) {
+        inset: 10px;
+        border-left: 15px solid #0fb4ff;
+        filter: blur(8px);
+      }
+      
+      .bubble span:nth-child(2) {
+        inset: 10px;
+        border-right: 15px solid #ff4484;
+        filter: blur(8px);
+      }
+      
+      .bubble span:nth-child(3) {
+        inset: 10px;
+        border-top: 15px solid #ffeb3b;
+        filter: blur(8px);
+      }
+      
+      .bubble span:nth-child(4) {
+        inset: 30px;
+        border-left: 15px solid #ff4484;
+        filter: blur(12px);
+      }
+      
+      .bubble span:nth-child(5) {
+        inset: 10px;
+        border-bottom: 10px solid #fff;
+        filter: blur(8px);
+        transform: rotate(330deg);
+      }
+
+}
