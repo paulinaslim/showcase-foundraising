@@ -1,4 +1,4 @@
-<div class="hero">
+<div class="hero panel panel-0">
     <div class="image-wrapper">
         <div class="img image-mobile">
             <img src="{{ asset('images/2.png') }}" alt="Museum Picture">
@@ -15,6 +15,8 @@
         <div class="img">
             <img src="{{ asset('images/5.png') }}" alt="Museum Picture">
         </div>
+
+
     </div>
     <div class="text-wrapper">
         <h1 class="headline">Where art transforms lives <br> and creates lasting impact</h1>
@@ -33,5 +35,6 @@
         </div>
 
     </div>
+
 
 </div>

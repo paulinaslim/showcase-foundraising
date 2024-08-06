@@ -1,8 +1,11 @@
 @extends('layouts.app')
 
 @section('content')
-    @include('partials.hero')
-    @include('partials.cards')
-    @include('partials.about')
-    @include('partials.form')
+    <div class='page-wrapper panels' data-barba="container" data-barba-namespace="home">
+        @include('partials.hero')
+        @include('partials.cards')
+        @include('partials.about')
+        @include('partials.form')
+
+    </div>
 @endsection
