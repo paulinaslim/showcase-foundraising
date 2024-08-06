@@ -1,37 +1,31 @@
-/*! js-cookie v3.0.5 | MIT */
+/*!
+ * GSAP 3.12.5
+ * https://gsap.com
+ *
+ * @license Copyright 2008-2024, GreenSock. All rights reserved.
+ * Subject to the terms at https://gsap.com/standard-license or for
+ * Club GSAP members, the agreement issued with that membership.
+ * @author: Jack Doyle, jack@greensock.com
+*/
 
-//! all attributes
+/*!
+ * Observer 3.12.5
+ * https://gsap.com
+ *
+ * @license Copyright 2008-2024, GreenSock. All rights reserved.
+ * Subject to the terms at https://gsap.com/standard-license or for
+ * Club GSAP members, the agreement issued with that membership.
+ * @author: Jack Doyle, jack@greensock.com
+*/
 
-//! data-jcc
+/*!
+ * ScrollTrigger 3.12.5
+ * https://gsap.com
+ *
+ * @license Copyright 2008-2024, GreenSock. All rights reserved.
+ * Subject to the terms at https://gsap.com/standard-license or for
+ * Club GSAP members, the agreement issued with that membership.
+ * @author: Jack Doyle, jack@greensock.com
+*/
 
-//! data-jcc-accept
-
-//! data-jcc-detailcontent
-
-//! data-jcc-details
-
-//! data-jcc-detailtable
-
-//! data-jcc-disabled
-
-//! data-jcc-donottrack
-
-//! data-jcc-donottrackclose
-
-//! data-jcc-donottracktime
-
-//! data-jcc-extmed
-
-//! data-jcc-extmed-btn
-
-//! data-jcc-extmed-iframe
-
-//! data-jcc-extmed-view
-
-//! data-jcc-option
-
-//! data-jcc-refuse
-
-//! data-jcc-savedetails
-
-//! data-jcc-script
+/*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */
