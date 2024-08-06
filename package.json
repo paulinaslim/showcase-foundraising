@@ -21,7 +21,10 @@
         "sass-loader": "^12.1.0"
     },
     "dependencies": {
+        "@barba/core": "^2.10.0",
         "accordion-js": "^3.3.4",
-        "js-cookie": "^3.0.5"
+        "gsap": "^3.12.5",
+        "js-cookie": "^3.0.5",
+        "vivus": "^0.4.6"
     }
 }

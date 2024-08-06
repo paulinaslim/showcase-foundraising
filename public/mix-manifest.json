@@ -1,17 +1,5 @@
 {
     "/js/app.js": "/js/app.js",
-    "/css/app.css": "/css/app.css",
-    "/css/footer.css": "/css/footer.css",
-    "/css/cookieconsent.css": "/css/cookieconsent.css",
-    "/css/cards.css": "/css/cards.css",
-    "/css/about.css": "/css/about.css",
-    "/css/typo.css": "/css/typo.css",
-    "/css/mixins.css": "/css/mixins.css",
-    "/css/global.css": "/css/global.css",
-    "/css/elements.css": "/css/elements.css",
-    "/css/_variables.css": "/css/_variables.css",
-    "/css/home.css": "/css/home.css",
-    "/css/nav.css": "/css/nav.css",
-    "/css/hero.css": "/css/hero.css",
-    "/css/form.css": "/css/form.css"
+    "/js/cookieConsent.js": "/js/cookieConsent.js",
+    "/css/app.css": "/css/app.css"
 }
