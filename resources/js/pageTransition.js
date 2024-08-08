@@ -31,16 +31,15 @@ document.addEventListener("DOMContentLoaded", function () {
     function initializePage() {}
     initializePage();
 
-    function contentAnimation() {
-        let tl = gsap.timeline();
+    // function contentAnimation() {
+    //     let tl = gsap.timeline();
 
-        tl.from(".page-wrapper", {
-            duration: 0.5,
-            translateY: 50,
-            opacity: 0,
-        });
-    }
-
+    //     tl.from(".page-wrapper", {
+    //         duration: 0.5,
+    //         translateY: 50,
+    //         opacity: 0,
+    //     });
+    // }
     barba.init({
         sync: true,
         transitions: [
@@ -48,22 +47,18 @@ document.addEventListener("DOMContentLoaded", function () {
                 async leave(data) {
                     console.log("leave");
                     window.scrollTo(0, 0);
-                    initializePage();
-
+                    // initializePage();
                     // pageTransitionStripes();
                     // pageTransitionInsideOut();
                 },
                 async enter(data) {
                     console.log("enter next");
                     window.scrollTo(0, 0);
-                    initializePage();
-                    contentAnimation();
-                    // onComplete: () => {
-                    //     ScrollTrigger.refresh(true);
-                    // };
+                    // initializePage();
+                    // contentAnimation();
                 },
                 async once(data) {
-                    contentAnimation();
+                    // contentAnimation();
                 },
             },
         ],

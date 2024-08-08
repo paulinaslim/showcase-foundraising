@@ -2,8 +2,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 document.addEventListener("DOMContentLoaded", function () {
-    gsap.registerPlugin(ScrollTrigger);
-    gsap.registerPlugin(Observer);
+    gsap.registerPlugin(ScrollTrigger, MotionPathPlugin, Observer);
 
     gsap.to(".a", {
         x: 500,

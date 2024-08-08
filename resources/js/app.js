@@ -5,7 +5,6 @@ import "./form";
 import "./downloadPdf";
 import "./animations";
 import "./gsap";
+import "./story";
 import "./pageTransition";
 import "./cookieConsent";
-
-import JsCookieConsent from "./cookieConsent";
