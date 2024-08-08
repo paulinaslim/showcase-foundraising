@@ -48,19 +48,21 @@
                 justify-content: center;
                 align-items: center;
                 border-radius: 30px;
-                background: linear-gradient(145deg, $white, $canadian-grey-transparent);
-                box-shadow:  -3px -3px 0px #ffffff,
-                            3px 3px 0px #dbdbdb;
+                background: linear-gradient(145deg, $white, $canadian-grey);
+                border: .2px solid $custom-black;
+                border-right: 2px solid $custom-black;
+                border-bottom: 2px solid $custom-black;
                 overflow: hidden;
                 cursor: pointer;
-                border: 1px solid $grey;
+                // border: 1px solid $grey;
               }
               
               button:after {
                 content: " ";
                 width: 0%;
                 height: 100%;
-                background: $canadian-grey-transparent;
+                background: $canadian-grey;
+                opacity: 0.5;
                 position: absolute;
                 transition: all 0.4s ease-in-out;
                 right: 0;
@@ -109,6 +111,7 @@
         display: flex;
         justify-content: center;
         gap: 2rem;
+        padding-block: 1rem;
     
         @include medium {
             justify-content: flex-end;
@@ -168,15 +171,15 @@
            img {
             padding-top: 1rem;
             max-width: 250px;
-            transition: all 0.4s ease-in-out;
-
-
+            opacity: 1;
+            height: auto;
+            transition: opacity 0.8s ease-in-out, height 0.5s ease-in-out;
+        
             &.scrolled {
-              display: none;
-              transition: all 0.4s ease-in-out;
-
-             
-          }
+                opacity: 0;
+                height: 0;
+                overflow: hidden;
+            }
 
            }
             @include medium {
