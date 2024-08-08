@@ -1,20 +1,3 @@
-<script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-        dataLayer.push(arguments)
-    }
-    gtag("consent", "default", {
-        ad_storage: "denied",
-        analytics_storage: "denied",
-        functionality_storage: "denied",
-        personalization_storage: "denied",
-        security_storage: "granted",
-        wait_for_update: 500
-    });
-    gtag("set", "ads_data_redaction", true);
-</script>
-
 {{-- alles annehmen und "nur analytics" --}}
 <script>
     (function(w, d, s, l, i) {
@@ -32,6 +15,8 @@
         f.parentNode.insertBefore(j, f);
     })(window, document, 'script', 'dataLayer', 'G-D8C043FHK3');
 </script>
+
+
 <script type="text/plain" data-jcc-script="analysis">
     function consentGrantedAnalysis() {
         gtag('consent', 'update', {
@@ -40,6 +25,7 @@
       }
       consentGrantedAnalysis();
 </script>
+
 
 {{-- alles annehmen --}}
 <script type="text/plain" data-jcc-script="marketing">

@@ -12,25 +12,17 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Observer.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
-
-
-
-
-
-
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/MotionPathPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Flip.min.js"></script>
 </head>
 
 <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 
-@include('partials.tracking_scripts')
 </head>
 
-
-
-
-
 <body data-barba="wrapper">
-
+    <noscript id="noscript"></noscript>
     <ul class="transition">
         <li></li>
         <li></li>
@@ -39,9 +31,7 @@
         <li></li>
     </ul>
 
-    <div class="transition-inside-out">
-
-    </div>
+    <div class="transition-inside-out"></div>
 
     <nav>
         @include('partials.nav')
@@ -55,9 +45,9 @@
         @include('partials.footer')
     </footer>
     @include('partials.cookie_consent')
-
-
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="{{ mix('js/app.js') }}"></script>
+
 </body>
 
 </html>

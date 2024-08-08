@@ -1,5 +1,5 @@
 <section class="about-wrapper">
-    <div class=" panel panel-1">
+    <div class=" panel-1">
 
         <div class="intro">
             <div class="intro-left">
@@ -65,13 +65,13 @@
         </div>
     </div>
 
-    <div class="panel panel-image image-mobile">
+    {{-- <div class="panel panel-image image-mobile">
         <img src="{{ asset('images/hero-right.png') }}" alt="girl painting">
-    </div>
+    </div> --}}
 
 
     {{-- <div class="separator panel"></div> --}}
-    <div class=" panel panel-2">
+    <div class="  panel-2">
 
         <div class="intro">
             <div class="intro-left">
@@ -141,9 +141,9 @@
             </div>
         </div>
     </div>
-    <div class="panel panel-image image-mobile">
+    {{-- <div class="panel panel-image image-mobile">
         <img src="{{ asset('images/gallery.png') }}" alt="girl painting">
-    </div>
+    </div> --}}
 
 
 

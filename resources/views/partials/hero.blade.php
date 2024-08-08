@@ -19,7 +19,9 @@
 
     </div>
     <div class="text-wrapper">
-        <h1 class="headline">Where art transforms lives <br> and creates lasting impact</h1>
+
+        <h1 id="headline" class="headline">Where art transforms lives <br>and creates<span id="headline-span"></span>
+        </h1>
 
         <p class="copy"><span class="bold">Join us.</span> Lorem ipsum dolor sit amet, <span
                 class="underline">consetetur

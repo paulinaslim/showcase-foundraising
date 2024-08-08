@@ -7,7 +7,7 @@
             </button>
 
             <button type="button" class="btn cookieconsent__button hidden confirm">
-                Auswahl Bestätigen
+                Nur Analytics
             </button>
 
             <button type="button" class="btn cookieconsent__button accept ">
