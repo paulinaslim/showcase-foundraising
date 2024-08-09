@@ -9,9 +9,6 @@ document.addEventListener("DOMContentLoaded", function () {
     let snapTriggers = [];
     let scrollStarts = [];
     let snapScroll = (value) => value;
-    panels.forEach((panel) => {
-        panel.style.transitionDuration = "5s";
-    });
 
     panels.forEach((panel, i) => {
         ScrollTrigger.create({
@@ -19,7 +16,6 @@ document.addEventListener("DOMContentLoaded", function () {
             start: "-300px top",
             ease: "power2.easeOut",
             duration: 5,
-            markers: true,
         });
     });
 
