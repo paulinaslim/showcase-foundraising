@@ -1,18 +1,16 @@
-// resources/js/form.js
-
 document.addEventListener("DOMContentLoaded", function () {
-    const form = document.querySelector(".application-form");
-    const successAlert = form.querySelector(".success");
-    const dangerAlert = form.querySelector(".danger");
-    const submitButton = form.querySelector(".button");
+    const submitButton = document.getElementById("submit-contact");
 
     submitButton.addEventListener("click", function (event) {
+        const form = document.querySelector(".application-form");
+        const successAlert = document.querySelector(".success");
+        const dangerAlert = document.querySelector(".danger");
         event.preventDefault();
 
         const formData = new FormData(form);
         const jsonData = {};
         formData.forEach((value, key) => (jsonData[key] = value));
-        console.log("Form data:", jsonData);
+        // console.log("Form data:", jsonData);
 
         fetch(form.action, {
             method: "POST",
@@ -35,20 +33,13 @@ document.addEventListener("DOMContentLoaded", function () {
                 } else {
                     console.log("Form submitted successfully!");
                     successAlert.style.display = "block";
+
                     form.reset();
+                    location.href = "/thankyou";
                 }
             })
             .catch((error) => {
                 console.error("Error:", error);
             });
-    });
-
-    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-        anchor.addEventListener("click", function (event) {
-            event.preventDefault();
-            document.querySelector(this.getAttribute("href")).scrollIntoView({
-                behavior: "smooth",
-            });
-        });
     });
 });

@@ -1,5 +1,7 @@
-window.addEventListener("load", function () {
+document.addEventListener("DOMContentLoaded", function () {
     const galleryWrapper = document.getElementById("gallery-wrapper");
+    const gallery = document.getElementById("gallery");
+    const prevSection = gallery.previousElementSibling;
 
     function getScrollAmount() {
         let galleryWidth = galleryWrapper.scrollWidth;
@@ -11,13 +13,18 @@ window.addEventListener("load", function () {
 
     const tl = gsap.timeline();
 
-    tl.to(galleryWrapper, {
-        x: () => getScrollAmount(),
-        duration: 3,
-        ease: "none",
-    }).to(galleryWrapper, {
-        duration: 1,
-    });
+    const tween = tl
+        .to(galleryWrapper, {
+            x: () => getScrollAmount(),
+            duration: 3,
+            ease: "none",
+        })
+        .to(galleryWrapper, {
+            duration: 1,
+        });
+    // .to(prevSection, {
+    //     duration: 2,
+    // });
 
     const scrollAmount = Math.abs(getScrollAmount());
 
@@ -26,7 +33,7 @@ window.addEventListener("load", function () {
         start: "top 5%",
         end: `+=${scrollAmount}`,
         pin: true,
-        animation: tl,
+        animation: tween,
         scrub: 1,
         invalidateOnRefresh: true,
     });

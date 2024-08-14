@@ -8,3 +8,7 @@ import "./gsap";
 import "./story";
 import "./pageTransition";
 import "./cookieConsent";
+import "./parallax";
+import "./banners";
+import "./formSubmitted";
+import "./smoothScroll";

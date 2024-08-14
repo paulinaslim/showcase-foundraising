@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     const navbar = document.querySelector(".navbar");
     const mobileImg = document.querySelector(".mobile img");
-    const formButton = document.querySelector(".btn-application");
+    const formButton = document.querySelector(".btn-animated");
 
     window.addEventListener("scroll", function () {
         if (window.scrollY > 50) {

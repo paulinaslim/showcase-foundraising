@@ -85,7 +85,6 @@ document.addEventListener("DOMContentLoaded", function () {
             dataLayer.push(arguments);
         }
         gtag("js", new Date());
-
         gtag("config", "G-D8C043FHK3");
 
         (function (w, d, s, l, i) {

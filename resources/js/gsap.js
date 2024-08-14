@@ -26,19 +26,6 @@ document.addEventListener("DOMContentLoaded", function () {
             toggleActions: "restart pause resume reset",
         },
     });
-    gsap.to(".d", {
-        scale: 0.2,
-        opacity: 0.1,
-        duration: 4,
-        x: 500,
-        y: 200,
-        scrollTrigger: {
-            trigger: ".c",
-            start: "top center",
-            scrub: 1,
-            toggleActions: "restart pause resume reset",
-        },
-    });
 
     gsap.to(".c", {
         x: 500,
@@ -62,19 +49,19 @@ document.addEventListener("DOMContentLoaded", function () {
         },
     });
 
-    // boxes.forEach((box) => {
-    //     gsap.to(box, {
-    //         x: 400,
-    //         rotation: 360,
-    //         duration: 3,
-    //         scrollTrigger: {
-    //             trigger: box,
-    //             start: "top center",
-    //             end: "bottom center",
-    //             scrub: true,
-    //         },
-    //     });
-    // });
+    gsap.to(".d", {
+        scale: 0.2,
+        opacity: 0.1,
+        duration: 4,
+        x: 500,
+        y: 200,
+        scrollTrigger: {
+            trigger: ".c",
+            start: "top center",
+            scrub: 1,
+            toggleActions: "restart pause resume reset",
+        },
+    });
 
     // -------------BUBBLES-------------
 
