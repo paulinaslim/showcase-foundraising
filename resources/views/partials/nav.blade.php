@@ -9,9 +9,11 @@
     </div>
 
     <div class="menu">
+        <a class="nav-item" href="/" data-barba="prefetch">Home</a>
+        <a class="nav-item" href="/banners" data-barba="prefetch">Banners</a>
         <a class="nav-item " href="/animations" data-barba="prefetch">Animations</a>
         <a class="nav-item " href="/gsap" data-barba="prefetch">GSAP</a>
-        <a class="nav-item" href="/" data-barba="prefetch">Home</a>
+        <a class="nav-item" href="/parallax" data-barba="prefetch">Parallax</a>
     </div>
 
 

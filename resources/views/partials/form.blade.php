@@ -58,7 +58,7 @@
             </div>
         </div>
         <div class="submit-wrapper">
-            <button type="submit" class="button">Submit</button>
+            <button id='submit-contact' type="submit" class="button">Submit</button>
         </div>
     </form>
     <hr>

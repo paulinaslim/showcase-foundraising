@@ -9,6 +9,9 @@
             <div class="box d"></div>
 
         </div>
+        <p style="color: white">
+            Move the bubles.
+        </p>
         <hr>
 
 
@@ -16,8 +19,7 @@
             <div class="bubble-wrapper">
 
                 <p class="paragraph">
-                    wow <br>
-                    this is amazing
+                    Interactive Bubbles
                 </p>
                 <div class="bubble">
                     <span></span>
