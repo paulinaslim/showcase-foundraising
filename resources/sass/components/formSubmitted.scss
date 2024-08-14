@@ -1,0 +1,65 @@
+@import '../settings/variables';
+
+#contact-page {
+    height: 100%;
+
+
+    .thumbnail  {
+        width: 100%;
+        height: 100%;
+     }
+
+
+     .contact-content {
+        position: absolute;
+        top: 6rem;
+        z-index: 2;
+
+        .contact-intro {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            gap: 2rem;
+            margin-top: 7rem;
+            width: 100%;
+            padding:2rem ;
+            background-color: $canadian-grey-transparent ;
+
+
+
+            
+            h1 {
+                width: fit-content;
+                color:$canadian-grey ;
+                font-size:5rem;
+                margin: 0;
+                padding: 0;
+                .line {
+                   &::after {
+                    content: '|';
+                       color: $white;
+                       opacity: 0.5;
+                   } 
+                }       
+                  
+            }
+            .paragraph {
+                font-size: 1.5rem;
+                text-align: center;
+
+            }
+        }
+
+
+
+        .cards {
+            position: unset;
+            background-color: transparent;
+            .card {
+            background-color: $canadian-grey-transparent ;
+
+            }
+        }
+
+    }
+}

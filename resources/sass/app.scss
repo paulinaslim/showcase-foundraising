@@ -4,7 +4,6 @@
 @import 'settings/elements';
 @import 'settings/typo';
 
-@import 'home';
 @import 'components/nav';
 @import 'components/hero';
 @import 'components/cards';
@@ -13,8 +12,10 @@
 @import 'components/animations';
 @import 'components/gsap';
 @import 'components/story';
+@import 'components/parallax';
+@import 'components/formSubmitted';
+@import 'components/banners';
 @import 'components/footer';
 @import 'components/cookieconsent';
-
 
 @import 'accordion-js/dist/accordion.min.css';
