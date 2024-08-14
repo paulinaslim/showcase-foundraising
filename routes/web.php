@@ -13,4 +13,17 @@ Route::get('/animations', function () {
 Route::get('/gsap', function () {
     return view('pages.gsap');
 });
+Route::get('/parallax', function () {
+    return view('pages.parallax');
+});
+
+Route::get('/thankyou', function () {
+    return view('pages.formSubmitted');
+});
+
+Route::get('/banners', function () {
+    return view('pages.banners');
+});
+
+
 Route::post('/submit', [FormController::class, 'store']);
