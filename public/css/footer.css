@@ -1,6 +1,12 @@
 .footer {
-  background-color: rgba(234, 226, 221, 0.5);
+  position: relative;
+  width: 100%;
+  background-color: #eae2dd;
   padding: 2rem 0;
+  min-height: 250px;
+  width: 100%;
+  z-index: 1;
+  border-top: 0.5px solid #afacac;
 }
 .footer p, .footer a {
   color: #1d262e;
@@ -15,6 +21,8 @@
 }
 .footer .footer-wrapper {
   display: flex;
+  position: absolute;
+  bottom: 0;
   justify-content: space-between;
   flex-direction: column;
   gap: 2rem;

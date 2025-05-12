@@ -3,25 +3,26 @@
   !*** ./resources/js/cookieConsent.js ***!
   \***************************************/
 document.addEventListener("DOMContentLoaded", function () {
-  console.log("hallo cookies loaded");
   var acceptBtn = document.querySelector(".accept");
   var refuseBtn = document.querySelector(".refuse");
-  var confirmBtn = document.querySelector(".confirm");
+  var analyticsBtn = document.querySelector(".confirm");
   var cookieBar = document.querySelector(".cookieconsent__bar");
+  var noScript = document.getElementById("noscript");
+  function appendGTMframe() {
+    var iframe = document.createElement("iframe");
+    iframe.src = "https://www.googletagmanager.com/ns.html?id=GTM-WVHWJDVX";
+    iframe.height = "0";
+    iframe.width = "0";
+    iframe.style = "display:none;visibility:hidden";
+    noScript.appendChild(iframe);
+  }
   function onAcceptBtnClick() {
     window.dataLayer = window.dataLayer || [];
     function gtag() {
       dataLayer.push(arguments);
     }
-    gtag("consent", "default", {
-      ad_storage: "denied",
-      analytics_storage: "denied",
-      functionality_storage: "denied",
-      personalization_storage: "denied",
-      security_storage: "granted",
-      wait_for_update: 500
-    });
-    gtag("set", "ads_data_redaction", true);
+    gtag("js", new Date());
+    gtag("config", "G-D8C043FHK3");
     (function (w, d, s, l, i) {
       w[l] = w[l] || [];
       w[l].push({
@@ -34,12 +35,13 @@ document.addEventListener("DOMContentLoaded", function () {
       j.async = true;
       j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
       f.parentNode.insertBefore(j, f);
-    })(window, document, "script", "dataLayer", "G-D8C043FHK3");
+    })(window, document, "script", "dataLayer", "GTM-WVHWJDVX");
     function consentGrantedAnalysis() {
       gtag("consent", "update", {
         analytics_storage: "granted"
       });
     }
+    consentGrantedAnalysis();
     function consentGrantedMarketing() {
       gtag("consent", "update", {
         ad_storage: "granted"
@@ -64,41 +66,50 @@ document.addEventListener("DOMContentLoaded", function () {
     }(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
     fbq("init", "814646264176277");
     fbq("track", "PageView");
-    consentGrantedAnalysis();
+    appendGTMframe();
   }
-  function onRefuseBtnClick() {
+  function onAnalyticstBtnClick() {
     window.dataLayer = window.dataLayer || [];
     function gtag() {
       dataLayer.push(arguments);
     }
-    gtag("consent", "default", {
-      ad_storage: "denied",
-      analytics_storage: "denied",
-      functionality_storage: "denied",
-      personalization_storage: "denied",
-      security_storage: "granted",
-      wait_for_update: 500
-    });
-    gtag("set", "ads_data_redaction", true);
-    console.log("refuse");
-    closeCookieConsent();
+    gtag("js", new Date());
+    gtag("config", "G-D8C043FHK3");
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        "gtm.start": new Date().getTime(),
+        event: "gtm.js"
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != "dataLayer" ? "&l=" + l : "";
+      j.async = true;
+      j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, "script", "dataLayer", "GTM-WVHWJDVX");
+    function consentGrantedAnalysis() {
+      gtag("consent", "update", {
+        analytics_storage: "granted"
+      });
+    }
+    consentGrantedAnalysis();
+    appendGTMframe();
   }
 
   //Close Cookie Consent
   function closeCookieConsent() {
     cookieBar.classList.add("hidden");
-    console.log("cookie closed");
   }
   acceptBtn.addEventListener("click", function (e) {
     onAcceptBtnClick();
     closeCookieConsent();
   });
-  confirmBtn.addEventListener("click", function (e) {
-    onAcceptBtnClick();
+  analyticsBtn.addEventListener("click", function (e) {
+    onAnalyticstBtnClick();
     closeCookieConsent();
   });
   refuseBtn.addEventListener("click", function (e) {
-    onRefuseBtnClick();
     closeCookieConsent();
   });
 });

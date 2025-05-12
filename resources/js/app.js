@@ -12,3 +12,6 @@ import "./parallax";
 import "./banners";
 import "./formSubmitted";
 import "./smoothScroll";
+import "./meat";
+import "./productModel";
+import "./productPage";

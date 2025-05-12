@@ -1,5 +1,24 @@
 {
     "/js/app.js": "/js/app.js",
     "/js/cookieConsent.js": "/js/cookieConsent.js",
-    "/css/app.css": "/css/app.css"
+    "/css/app.css": "/css/app.css",
+    "/css/cookieconsent.css": "/css/cookieconsent.css",
+    "/css/cards.css": "/css/cards.css",
+    "/css/banners.css": "/css/banners.css",
+    "/css/animations.css": "/css/animations.css",
+    "/css/about.css": "/css/about.css",
+    "/css/typo.css": "/css/typo.css",
+    "/css/mixins.css": "/css/mixins.css",
+    "/css/global.css": "/css/global.css",
+    "/css/elements.css": "/css/elements.css",
+    "/css/_variables.css": "/css/_variables.css",
+    "/css/story.css": "/css/story.css",
+    "/css/product.css": "/css/product.css",
+    "/css/parallax.css": "/css/parallax.css",
+    "/css/nav.css": "/css/nav.css",
+    "/css/hero.css": "/css/hero.css",
+    "/css/gsap.css": "/css/gsap.css",
+    "/css/formSubmitted.css": "/css/formSubmitted.css",
+    "/css/form.css": "/css/form.css",
+    "/css/footer.css": "/css/footer.css"
 }

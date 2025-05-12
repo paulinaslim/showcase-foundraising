@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <section id="banners-page" class="parallax-thumbnail-wrapper">
+    <section id="banners-page" class="banners-page parallax-thumbnail-wrapper">
         <img class="thumbnail" src="{{ asset('images/outside.jpg') }}" alt="tree pink" />
 
 
@@ -43,7 +43,7 @@
 
                         <svg class="svg-path rocket-path" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"
                             fill="none">
-                            <path stroke="#DDAE36" stroke-dasharray="3.49 3.49" stroke-width="2.93783"
+                            <path stroke="#DDAE36" stroke-width="2.93783" stroke-dasharray="3.49 3.49"
                                 d=" M-.500495 256.999C28.9997 119 324 228.5 350.432 91.8089"></path>
                         </svg>
                     </div>
@@ -97,5 +97,14 @@
 
         </div>
 
+    </section>
+    <section class="banners-page section-02">
+        <img class="thumbnail" src="{{ asset('images/outside.jpg') }}" alt="tree pink" />
+        <div class=" banners-content-02">
+
+            <div class="image">
+                <img class="test-image" src="{{ asset('images/test-image.svg') }}" alt="test-image" />
+            </div>
+        </div>
     </section>
 @endsection

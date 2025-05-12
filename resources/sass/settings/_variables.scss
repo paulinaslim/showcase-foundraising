@@ -24,6 +24,9 @@ $custom-black-transparent: rgba(52, 50, 64, 0.632);
 $canadian-grey-transparent:rgba(234, 221, 234, 0.571);
 $canadian-grey-transparent-200:rgba(234, 221, 234, 0.2);
 
+$basic-gradient: linear-gradient(0deg, $white 0%,  $canadian-grey 100%);
+$basic-gradient-revert: linear-gradient(0deg, $canadian-grey  0%,  $white 100%);
+
 $text-outline: 2px 2px 0 black, 2px -2px 0 black, -2px 2px 0 black, -2px -2px 0 black, 2px 0px 0 black, 0px 2px 0 black, -2px 0px 0 black, 0px -2px 0 black;
 // ----------------- FONTS -------------------------
 

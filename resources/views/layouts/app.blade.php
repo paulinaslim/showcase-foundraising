@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fundraising Showcase</title>
     <meta name="csrf-token" content="{{ csrf_token() }}">
+    <meta name="robots" content="noindex,follow" />
     <script src="https://cdn.jsdelivr.net/npm/vivus@latest/dist/vivus.min.js"></script>
     <script src="https://unpkg.com/@barba/core"></script>
 
@@ -21,6 +22,17 @@
     <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"></script>
     <script src="https://unpkg.com/split-type"></script>
+    <script type="importmap">
+        {
+          "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.167.1/build/three.module.js",
+            "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.167.1/examples/jsm/"
+          }
+        }
+      </script>
+
+
+
 
 </head>
 

@@ -22,9 +22,14 @@
     },
     "dependencies": {
         "@barba/core": "^2.10.0",
+        "@studio-freight/lenis": "^1.0.42",
         "accordion-js": "^3.3.4",
+        "animejs": "^3.2.2",
         "gsap": "^3.12.5",
         "js-cookie": "^3.0.5",
+        "simple-parallax-js": "^6.0.1",
+        "split-type": "^0.3.4",
+        "three": "^0.167.1",
         "vivus": "^0.4.6"
     }
 }

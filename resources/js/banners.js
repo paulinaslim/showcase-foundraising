@@ -3,7 +3,6 @@ import SplitType from "split-type";
 
 document.addEventListener("DOMContentLoaded", function () {
     const bannersWrapper = document.getElementById("banners-page");
-    // observer
     const animateWhenVisible = (element, animationCallback) => {
         const observer = new IntersectionObserver(
             (entries, observer) => {
@@ -34,9 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
         loop: true,
     });
 
-    // ----------------------------------------------------------------
     // ROCKET MOTION PATH
-    // ----------------------------------------------------------------
 
     const svgPath = document.querySelector(".rocket-path path");
     const rocket = document.querySelector(".rocket-object");
@@ -61,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
     //  --------------------- BANNERS ----------------------
     // ****************************************************************
 
-    // First Banner (Bangkok)
+    // Banner 1 (Bangkok)
     const headline = bannersWrapper.querySelector(".banner-1");
     new SplitType(headline, { types: " chars" });
     const chars = headline.querySelectorAll(".char");
@@ -96,7 +93,7 @@ document.addEventListener("DOMContentLoaded", function () {
             delay: 1000,
         });
 
-    // Banner 3 - Síngapur
+    // Banner 3 - Síngapore
     const singapur = bannersWrapper.querySelector(".banner-3");
     new SplitType(singapur, { types: "chars" });
 
@@ -209,7 +206,6 @@ document.addEventListener("DOMContentLoaded", function () {
         const textWrapper = document.querySelector(".el-town");
         if (textWrapper) textWrapper.classList.add("visible");
     }
-
     animateTownName();
 
     // Banner 5 and 6 Animation (Disco Banners) with Observer
@@ -287,16 +283,4 @@ document.addEventListener("DOMContentLoaded", function () {
                 },
             });
     });
-
-    // ----------------------------------------------------------------
-    // CHANGING TOWN NAMES
-    // ----------------------------------------------------------------
 });
-
-// const blink = anime({
-//     targets: cursor,
-//     loop: true,
-//     duration: 1000,
-//     easing: "easeInOutQuad",
-//     opacity: [{ value: [1, 1] }, { value: [0, 0] }],
-// });
